@@ -1,9 +1,12 @@
+import Banner from "../Banner/Banner";
+import SlidCat from "../SlidCat/SlidCat";
 
 
 const Home = () => {
     return (
         <div>
-            <h1 className='font-bold text-red-600'>Project getting ready</h1>
+            <Banner></Banner>
+            <SlidCat></SlidCat>
         </div>
     );
 };
