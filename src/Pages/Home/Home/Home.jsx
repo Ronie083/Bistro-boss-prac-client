@@ -1,4 +1,5 @@
 import Banner from "../Banner/Banner";
+import Bio from "../Bio/Bio";
 import SlidCat from "../SlidCat/SlidCat";
 
 
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <SlidCat></SlidCat>
+            <Bio></Bio>
         </div>
     );
 };
