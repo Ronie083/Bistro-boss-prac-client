@@ -13,7 +13,7 @@ import Headings from "../../../Components/Headings/Headings";
 
 const SlidCat = () => {
     return (
-        <div className="mb-8">
+        <div className="max-w-[1320px] mx-auto mb-8">
             <Headings
             heading={"ORDER ONLINE"}
             subHeading={"From 11:00am to 10:00pm"}
