@@ -6,6 +6,7 @@ import MenuCard from "../../Shared/MenuCard/MenuCard";
 const Popular = () => {
     const [menu, setMenu] = useState([]);
 
+
     useEffect(() => {
         fetch('menu.json')
             .then(res => res.json())
