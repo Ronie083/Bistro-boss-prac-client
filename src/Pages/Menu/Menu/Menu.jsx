@@ -8,6 +8,7 @@ import Pizza from '../Pizza/Pizza';
 import useMenu from '../../../Hooks/useMenu';
 import Salad from '../Salad/Salad';
 import Soup from '../Soup/Soup';
+import { Link } from 'react-router-dom';
 
 
 const Menu = () => {
@@ -39,7 +40,7 @@ const Menu = () => {
                             item={item}></MenuCard>)
                     }
                 </div>
-                <button className="btn btn-outline border-0 mb-10 border-b-4">Order Your Favorite Food</button>
+                <Link to='/shop' className="btn btn-outline border-0 mb-10 border-b-4">Order Your Favorite Food</Link>
             </div>
 
             {/* Section Category: Dessert  */}

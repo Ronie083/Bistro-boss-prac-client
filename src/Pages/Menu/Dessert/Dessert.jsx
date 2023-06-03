@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import MenuCard from "../../../Components/MenuCard/MenuCard";
 import TitleBanner from "../../../Components/TitleBanner/TitleBanner";
 import bannerImg2 from "../../../assets/menu/dessert-bg.jpeg"
@@ -18,7 +19,7 @@ const Dessert = ({ menus }) => {
                         item={item}></MenuCard>)
                 }
             </div>
-            <button className="btn btn-outline border-0 mb-10 border-b-4">Order Your Favorite Food</button>
+            <Link to='/shop' className="btn btn-outline border-0 mb-10 border-b-4">Order Your Favorite Food</Link>
         </div>
     );
 };

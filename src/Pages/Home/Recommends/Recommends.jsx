@@ -18,7 +18,8 @@ const Recommends = () => {
                     recommended.map(recommend => <ItemCards key={recommend._id}
                         name={recommend.name}
                         image={recommend.image}
-                        recipe={recommend.recipe}></ItemCards>)
+                        recipe={recommend.recipe}
+                        price={recommend.price}></ItemCards>)
                 }
             </div>
         </div>

@@ -15,7 +15,7 @@ const NavBar = () => {
                             <a>MENU</a>
                             <ul className="p-2">
                                 <li><Link to="menu">OUR MENU</Link></li>
-                                <li><a>OUR SHOP</a></li>
+                                <li><Link to="shop">OUR SHOP</Link></li>
                             </ul>
                         </li>
                     </ul>
@@ -31,7 +31,7 @@ const NavBar = () => {
                         <li><Link to="/">HOME</Link></li>
                         <li><a>CONTACT US</a></li>
                         <li><Link to="menu">OUR MENU</Link></li>
-                        <li><a>Our Shop</a></li>
+                        <li><Link to="shop">OUR SHOP</Link></li>
                     </ul>
                 </div>
                 <div className="flex-none">
