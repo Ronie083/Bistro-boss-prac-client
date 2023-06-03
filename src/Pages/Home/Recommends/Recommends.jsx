@@ -1,20 +1,12 @@
-import { useEffect, useState } from "react";
 import Headings from "../../../Components/Headings/Headings";
 import ItemCards from "../../../Components/ItemCards/ItemCards";
+import useMenu from "../../../Hooks/useMenu";
 
 
 const Recommends = () => {
-    const [recommended, setRecommended] = useState([]);
+    const [menus] = useMenu();
 
-
-    useEffect(() => {
-        fetch('menu.json')
-            .then(res => res.json())
-            .then(data => {
-                const popularItem = data.filter(item => item.category === 'popular')
-                setRecommended(popularItem)
-            })
-    }, [])
+    const recommended = menus.filter(item => item.category === 'popular')
 
     return (
         <div className="container mx-auto">

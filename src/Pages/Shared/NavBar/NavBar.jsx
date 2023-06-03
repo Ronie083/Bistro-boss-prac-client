@@ -14,20 +14,23 @@ const NavBar = () => {
                         <li>
                             <a>MENU</a>
                             <ul className="p-2">
-                                <li><a>OUR MENU</a></li>
+                                <li><Link to="menu">OUR MENU</Link></li>
                                 <li><a>OUR SHOP</a></li>
                             </ul>
                         </li>
                     </ul>
                 </div>
                 <div className="flex-1">
-                    <a className="btn btn-ghost upper-case text-xl">Bistro Boss</a>
+                    <div className="flex flex-col text-center">
+                        <a className="btn btn-ghost upper-case text-xl">Bistro Boss</a>
+                        <p className="uppercase">restaurant</p>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu uppercase menu-horizontal px-1">
                         <li><Link to="/">HOME</Link></li>
                         <li><a>CONTACT US</a></li>
-                        <li><a>Our Menu</a></li>
+                        <li><Link to="menu">OUR MENU</Link></li>
                         <li><a>Our Shop</a></li>
                     </ul>
                 </div>
